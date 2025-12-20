@@ -1,0 +1,47 @@
+dataset,repeat,task_type,metric,higher_is_better,noise_level,metadata_mode,score_scopeA_clean_test,score_scopeB_corrupt_test,perf_scopeA,perf_scopeB
+anneal,0,multiclass,Log Loss (sklearn.metrics.log_loss),False,0,none,0.1577789020461532,0.1577789020461532,-0.1577789020461532,-0.1577789020461532
+anneal,0,multiclass,Log Loss (sklearn.metrics.log_loss),False,0,wrong,0.8352358174433676,0.8352358174433676,-0.8352358174433676,-0.8352358174433676
+anneal,0,multiclass,Log Loss (sklearn.metrics.log_loss),False,1,true,0.4227380227892859,0.5640151544296963,-0.4227380227892859,-0.5640151544296963
+anneal,0,multiclass,Log Loss (sklearn.metrics.log_loss),False,1,none,9.178847378044436,0.4265670358109965,-9.178847378044436,-0.4265670358109965
+anneal,0,multiclass,Log Loss (sklearn.metrics.log_loss),False,1,wrong,9.204228990806772,0.4177756050810488,-9.204228990806772,-0.4177756050810488
+anneal,0,multiclass,Log Loss (sklearn.metrics.log_loss),False,2,true,0.3208439677045645,0.3208439677045645,-0.3208439677045645,-0.3208439677045645
+anneal,0,multiclass,Log Loss (sklearn.metrics.log_loss),False,2,none,0.1533661761774456,0.1533661761774456,-0.1533661761774456,-0.1533661761774456
+anneal,0,multiclass,Log Loss (sklearn.metrics.log_loss),False,2,wrong,0.3459357958011591,0.3459357958011591,-0.3459357958011591,-0.3459357958011591
+anneal,0,multiclass,Log Loss (sklearn.metrics.log_loss),False,3,true,1.0579025893470495,0.8464779506603346,-1.0579025893470495,-0.8464779506603346
+anneal,0,multiclass,Log Loss (sklearn.metrics.log_loss),False,3,none,0.9352482541915708,0.8303297086991097,-0.9352482541915708,-0.8303297086991097
+anneal,0,multiclass,Log Loss (sklearn.metrics.log_loss),False,3,wrong,1.2961460296871758,1.0963903295535296,-1.2961460296871758,-1.0963903295535296
+anneal,1,multiclass,Log Loss (sklearn.metrics.log_loss),False,0,true,0.3449781343078613,0.3449781343078613,-0.3449781343078613,-0.3449781343078613
+anneal,1,multiclass,Log Loss (sklearn.metrics.log_loss),False,0,none,0.427422539469453,0.427422539469453,-0.427422539469453,-0.427422539469453
+anneal,1,multiclass,Log Loss (sklearn.metrics.log_loss),False,1,true,0.5078685511509424,0.6607121247279754,-0.5078685511509424,-0.6607121247279754
+anneal,1,multiclass,Log Loss (sklearn.metrics.log_loss),False,1,none,1.3246753475122273,0.3814106430899369,-1.3246753475122273,-0.3814106430899369
+anneal,1,multiclass,Log Loss (sklearn.metrics.log_loss),False,1,wrong,1.7748301127199193,0.5754966820775949,-1.7748301127199193,-0.5754966820775949
+anneal,1,multiclass,Log Loss (sklearn.metrics.log_loss),False,2,true,1.8845187539306305,1.3547845424986975,-1.8845187539306305,-1.3547845424986975
+anneal,1,multiclass,Log Loss (sklearn.metrics.log_loss),False,2,none,0.5980296398696349,0.5980296398696349,-0.5980296398696349,-0.5980296398696349
+anneal,1,multiclass,Log Loss (sklearn.metrics.log_loss),False,2,wrong,0.5980296398696349,0.5980296398696349,-0.5980296398696349,-0.5980296398696349
+anneal,1,multiclass,Log Loss (sklearn.metrics.log_loss),False,3,true,0.8261512486899015,0.841821980432015,-0.8261512486899015,-0.841821980432015
+anneal,1,multiclass,Log Loss (sklearn.metrics.log_loss),False,3,none,0.830806872512321,0.8306547208206878,-0.830806872512321,-0.8306547208206878
+anneal,1,multiclass,Log Loss (sklearn.metrics.log_loss),False,3,wrong,0.9243379036875994,1.5033949903828023,-0.9243379036875994,-1.5033949903828023
+anneal,0,multiclass,Log Loss (sklearn.metrics.log_loss),False,0,catboost,0.05342946596177067,0.05342946596177067,-0.05342946596177067,-0.05342946596177067
+anneal,0,multiclass,Log Loss (sklearn.metrics.log_loss),False,0,baseline (soft),0.8323096364050595,0.8323096364050595,-0.8323096364050595,-0.8323096364050595
+anneal,0,multiclass,Log Loss (sklearn.metrics.log_loss),False,0,baseline (hard),8.650476813388114,8.650476813388114,-8.650476813388114,-8.650476813388114
+anneal,0,multiclass,Log Loss (sklearn.metrics.log_loss),False,1,catboost,0.3336799036161852,0.15489106417865603,-0.3336799036161852,-0.15489106417865603
+anneal,0,multiclass,Log Loss (sklearn.metrics.log_loss),False,1,baseline (soft),0.8323096364050595,0.8323096364050595,-0.8323096364050595,-0.8323096364050595
+anneal,0,multiclass,Log Loss (sklearn.metrics.log_loss),False,1,baseline (hard),8.650476813388114,8.650476813388114,-8.650476813388114,-8.650476813388114
+anneal,0,multiclass,Log Loss (sklearn.metrics.log_loss),False,2,catboost,0.6903767131759045,0.6345485225315671,-0.6903767131759045,-0.6345485225315671
+anneal,0,multiclass,Log Loss (sklearn.metrics.log_loss),False,2,baseline (soft),0.8323096364050595,0.8323096364050595,-0.8323096364050595,-0.8323096364050595
+anneal,0,multiclass,Log Loss (sklearn.metrics.log_loss),False,2,baseline (hard),8.650476813388114,8.650476813388114,-8.650476813388114,-8.650476813388114
+anneal,0,multiclass,Log Loss (sklearn.metrics.log_loss),False,3,catboost,0.8276210485347607,0.8326288902880634,-0.8276210485347607,-0.8326288902880634
+anneal,0,multiclass,Log Loss (sklearn.metrics.log_loss),False,3,baseline (soft),0.8323096364050595,0.8323096364050595,-0.8323096364050595,-0.8323096364050595
+anneal,0,multiclass,Log Loss (sklearn.metrics.log_loss),False,3,baseline (hard),8.650476813388114,8.650476813388114,-8.650476813388114,-8.650476813388114
+anneal,1,multiclass,Log Loss (sklearn.metrics.log_loss),False,0,catboost,0.09607639423202435,0.09607639423202435,-0.09607639423202435,-0.09607639423202435
+anneal,1,multiclass,Log Loss (sklearn.metrics.log_loss),False,0,baseline (soft),0.8306568812925521,0.8306568812925521,-0.8306568812925521,-0.8306568812925521
+anneal,1,multiclass,Log Loss (sklearn.metrics.log_loss),False,0,baseline (hard),8.650476813388114,8.650476813388114,-8.650476813388114,-8.650476813388114
+anneal,1,multiclass,Log Loss (sklearn.metrics.log_loss),False,1,catboost,0.3895995182069539,0.19716197002867253,-0.3895995182069539,-0.19716197002867253
+anneal,1,multiclass,Log Loss (sklearn.metrics.log_loss),False,1,baseline (soft),0.8306568812925521,0.8306568812925521,-0.8306568812925521,-0.8306568812925521
+anneal,1,multiclass,Log Loss (sklearn.metrics.log_loss),False,1,baseline (hard),8.650476813388114,8.650476813388114,-8.650476813388114,-8.650476813388114
+anneal,1,multiclass,Log Loss (sklearn.metrics.log_loss),False,2,catboost,0.14354889520149314,0.14915496962849423,-0.14354889520149314,-0.14915496962849423
+anneal,1,multiclass,Log Loss (sklearn.metrics.log_loss),False,2,baseline (soft),0.8306568812925521,0.8306568812925521,-0.8306568812925521,-0.8306568812925521
+anneal,1,multiclass,Log Loss (sklearn.metrics.log_loss),False,2,baseline (hard),8.650476813388114,8.650476813388114,-8.650476813388114,-8.650476813388114
+anneal,1,multiclass,Log Loss (sklearn.metrics.log_loss),False,3,catboost,0.8292102410792176,0.8394652247966596,-0.8292102410792176,-0.8394652247966596
+anneal,1,multiclass,Log Loss (sklearn.metrics.log_loss),False,3,baseline (soft),0.8306568812925521,0.8306568812925521,-0.8306568812925521,-0.8306568812925521
+anneal,1,multiclass,Log Loss (sklearn.metrics.log_loss),False,3,baseline (hard),8.650476813388114,8.650476813388114,-8.650476813388114,-8.650476813388114
