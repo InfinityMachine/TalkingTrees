@@ -1,0 +1,25 @@
+dataset,repeat,task_type,metric,higher_is_better,noise_level,metadata_mode,score_scopeA_clean_test,score_scopeB_corrupt_test,perf_scopeA,perf_scopeB
+Fitness_Club,0,binary,ROC AUC (sklearn.metrics.roc_auc_score),True,0,true,0.7849175741076829,0.7849175741076829,0.7849175741076829,0.7849175741076829
+Fitness_Club,0,binary,ROC AUC (sklearn.metrics.roc_auc_score),True,0,none,0.7985386418632788,0.7985386418632788,0.7985386418632788,0.7985386418632788
+Fitness_Club,0,binary,ROC AUC (sklearn.metrics.roc_auc_score),True,0,wrong,0.7898706896551723,0.7898706896551723,0.7898706896551723,0.7898706896551723
+Fitness_Club,0,binary,ROC AUC (sklearn.metrics.roc_auc_score),True,1,true,0.7731397459165155,0.7897761645493042,0.7731397459165155,0.7897761645493042
+Fitness_Club,0,binary,ROC AUC (sklearn.metrics.roc_auc_score),True,1,none,0.7948332577132486,0.7841424682395643,0.7948332577132486,0.7841424682395643
+Fitness_Club,0,binary,ROC AUC (sklearn.metrics.roc_auc_score),True,1,wrong,0.7817887931034483,0.7981321839080461,0.7817887931034483,0.7981321839080461
+Fitness_Club,0,binary,ROC AUC (sklearn.metrics.roc_auc_score),True,2,true,0.7799550060496068,0.7876020871143377,0.7799550060496068,0.7876020871143377
+Fitness_Club,0,binary,ROC AUC (sklearn.metrics.roc_auc_score),True,2,none,0.7891712038717484,0.7860518753781005,0.7891712038717484,0.7860518753781005
+Fitness_Club,0,binary,ROC AUC (sklearn.metrics.roc_auc_score),True,2,wrong,0.778385889292196,0.782866379310345,0.778385889292196,0.782866379310345
+Fitness_Club,0,binary,ROC AUC (sklearn.metrics.roc_auc_score),True,3,true,0.5500510435571688,0.5361180429522081,0.5500510435571688,0.5361180429522081
+Fitness_Club,0,binary,ROC AUC (sklearn.metrics.roc_auc_score),True,3,none,0.44257599818511795,0.5095564882032667,0.44257599818511795,0.5095564882032667
+Fitness_Club,0,binary,ROC AUC (sklearn.metrics.roc_auc_score),True,3,wrong,0.4667271627344223,0.4895360707803993,0.4667271627344223,0.4895360707803993
+Fitness_Club,1,binary,ROC AUC (sklearn.metrics.roc_auc_score),True,0,true,0.8153854911857911,0.8153854911857911,0.8153854911857911,0.8153854911857911
+Fitness_Club,1,binary,ROC AUC (sklearn.metrics.roc_auc_score),True,0,none,0.8265147346249454,0.8265147346249454,0.8265147346249454,0.8265147346249454
+Fitness_Club,1,binary,ROC AUC (sklearn.metrics.roc_auc_score),True,0,wrong,0.81702688855576,0.81702688855576,0.81702688855576,0.81702688855576
+Fitness_Club,1,binary,ROC AUC (sklearn.metrics.roc_auc_score),True,1,true,0.8017704320765099,0.7991992257917607,0.8017704320765099,0.7991992257917607
+Fitness_Club,1,binary,ROC AUC (sklearn.metrics.roc_auc_score),True,1,none,0.794350936450407,0.802538947608114,0.794350936450407,0.802538947608114
+Fitness_Club,1,binary,ROC AUC (sklearn.metrics.roc_auc_score),True,1,wrong,0.7815802956412836,0.7987438091804399,0.7815802956412836,0.7987438091804399
+Fitness_Club,1,binary,ROC AUC (sklearn.metrics.roc_auc_score),True,2,true,0.7065314332340271,0.6917019298278906,0.7065314332340271,0.6917019298278906
+Fitness_Club,1,binary,ROC AUC (sklearn.metrics.roc_auc_score),True,2,none,0.6962655837871687,0.6962655837871687,0.6962655837871687,0.6962655837871687
+Fitness_Club,1,binary,ROC AUC (sklearn.metrics.roc_auc_score),True,2,wrong,0.7034383954154726,0.692906886278677,0.7034383954154726,0.692906886278677
+Fitness_Club,1,binary,ROC AUC (sklearn.metrics.roc_auc_score),True,3,true,0.4798288392569119,0.5314142583350728,0.4798288392569119,0.5314142583350728
+Fitness_Club,1,binary,ROC AUC (sklearn.metrics.roc_auc_score),True,3,none,0.5483595514146378,0.49874760431886744,0.5483595514146378,0.49874760431886744
+Fitness_Club,1,binary,ROC AUC (sklearn.metrics.roc_auc_score),True,3,wrong,0.567003168940587,0.49444961004952653,0.567003168940587,0.49444961004952653
