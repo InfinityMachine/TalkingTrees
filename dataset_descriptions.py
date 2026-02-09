@@ -463,3 +463,26 @@ Metric: {metric}
 
 </dataset>
 """
+
+desc["pm25_local"] = """
+<dataset>
+Your task is to predict PM2.5 concentration.
+
+Size: {num_samples} total (train and val)
+
+Feature descriptions (based on the provided CSV columns):
+- `OBJECTID_1`: Row identifier.
+- `PROVINCE`, `CITY`, `COUNTY`: Categorical location fields.
+- `AET`: Float. Actual evapotranspiration (or similar environmental indicator).
+- `ppt`: Float. Precipitation.
+- `tem`: Float. Temperature.
+- `wind`: Float. Wind speed.
+- `NOX`: Float. Nitrogen oxides concentration.
+- `SO2`: Float. Sulfur dioxide concentration.
+- `fertilzier`: Float. Fertilizer usage indicator (note: column name as provided).
+- `manure`: Float. Manure usage indicator.
+
+Targets: `PM2.5` — Float. Fine particulate matter concentration.
+Metric: {metric}
+</dataset>
+"""
