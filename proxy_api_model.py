@@ -27,6 +27,7 @@ class ProxyAPIModel(smolagents.OpenAIServerModel):
     ) -> ChatMessage:
         verify_ssl = self.client_kwargs.get("verify_ssl", True)
         timeout = self.client_kwargs.get("timeout", 120)
+        auth_scheme = self.client_kwargs.get("auth_scheme", "OAuth")
         completion_kwargs = self._prepare_completion_kwargs(
             messages=messages,
             stop_sequences=stop_sequences,
@@ -39,7 +40,7 @@ class ProxyAPIModel(smolagents.OpenAIServerModel):
         )
         resp = requests.post(
             self.client_kwargs['base_url'],
-            headers={"authorization": f"OAuth {self.client_kwargs['api_key']}",
+            headers={"authorization": f"{auth_scheme} {self.client_kwargs['api_key']}",
                      "content-type": "application/json"},
             verify=verify_ssl,
             timeout=timeout,
