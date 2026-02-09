@@ -25,6 +25,8 @@ class ProxyAPIModel(smolagents.OpenAIServerModel):
             tools_to_call_from=None,
             **kwargs,
     ) -> ChatMessage:
+        verify_ssl = self.client_kwargs.get("verify_ssl", True)
+        timeout = self.client_kwargs.get("timeout", 120)
         completion_kwargs = self._prepare_completion_kwargs(
             messages=messages,
             stop_sequences=stop_sequences,
@@ -35,16 +37,31 @@ class ProxyAPIModel(smolagents.OpenAIServerModel):
             convert_images_to_image_urls=True,
             **kwargs,
         )
-        response = requests.post(
+        resp = requests.post(
             self.client_kwargs['base_url'],
             headers={"authorization": f"OAuth {self.client_kwargs['api_key']}",
                      "content-type": "application/json"},
-            verify=False,
+            verify=verify_ssl,
+            timeout=timeout,
             json=dict(
                 **completion_kwargs,
                 # max_completion_tokens=self.max_new_tokens
             )
-        ).json()
+        )
+        if not resp.ok:
+            raise RuntimeError(
+                f"Proxy API error: status={resp.status_code}, body={resp.text[:1000]}"
+            )
+        try:
+            response = resp.json()
+        except Exception as e:
+            raise RuntimeError(
+                f"Proxy API returned non-JSON: status={resp.status_code}, body={resp.text[:1000]}"
+            ) from e
+        if not isinstance(response, dict) or "response" not in response:
+            raise RuntimeError(
+                f"Proxy API returned unexpected payload: {str(response)[:1000]}"
+            )
         response = openai.types.chat.chat_completion.ChatCompletion(
             id=response['response']['id'], model=response['response']['model'], created=response['response']['created'],
             choices=[openai.types.chat.chat_completion.Choice(**c) for c in response['response']['choices']],
